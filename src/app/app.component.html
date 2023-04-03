@@ -1,5 +1,6 @@
 <div class="topnav">
-  <a [class]="location === '/' ? 'active' : ''" href="/">Home</a>
-  <a [class]="location.startsWith('/my-app') ? 'active' : ''" href="/my-app">My-app</a>
-  <a [class]="location.startsWith('/child1') ? 'active' : ''" href="/child1">Child1</a>
+  <a [class]="location === '/' ? 'active' : ''" [routerLink]="['/']" routerLinkActive="router-link-active" >Home</a>
+  <a [class]="location.startsWith('/my-app') ? 'active' : ''" [routerLink]="['/my-app']" routerLinkActive="router-link-active" >My-app</a>
+  <a [class]="location.startsWith('/child1') ? 'active' : ''" [routerLink]="['/child1']" routerLinkActive="router-link-active" >Child1</a>
+  <a [class]="location.startsWith('/ng14') ? 'active' : ''" [routerLink]="['/ng14']" routerLinkActive="router-link-active" >Angular 14</a>
 </div>
